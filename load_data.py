@@ -14,15 +14,15 @@ class MasterReader(object):
         self.MAX_HEIGHT = 90
 
     def training_generator(self):
-		while True:
-			for i in range(int(np.shape(self.X_train)[0] / self.config.batch_size)):
-				x = self.X_train[i * self.config.batch_size : (i + 1) * self.config.batch_size]
-				y = self.y_train[i * self.config.batch_size : (i + 1) * self.config.batch_size]
-				one_hot_labels_train = keras.utils.to_categorical(y, num_classes=self.config.num_classes)
-				yield (x,one_hot_labels_train)
+	    while True:
+		    for i in range(int(np.shape(self.X_train)[0] / self.config.batch_size)):
+			    x = self.X_train[i * self.config.batch_size : (i + 1) * self.config.batch_size]
+		        y = self.y_train[i * self.config.batch_size : (i + 1) * self.config.batch_size]
+		        one_hot_labels_train = keras.utils.to_categorical(y, num_classes=self.config.num_classes)
+			    yield (x,one_hot_labels_train)
 
 
-	def create_model(self, seen_validation):
+    def create_model(self, seen_validation):
 		np.random.seed(0)
 
 
@@ -164,7 +164,7 @@ class MasterReader(object):
 	'''
 
 	def create_plots(self, history):
-		os.mkdir('plots')
+	    os.mkdir('plots')
 		# summarize history for accuracy
 		plt.plot(history.history['acc'])
 		plt.plot(history.history['val_acc'])
@@ -230,8 +230,8 @@ class MasterReader(object):
                                     image = misc.imread(path + '/' + img_name)
                                     image = misc.imresize(image, (self.MAX_WIDTH, self.MAX_HEIGHT))
                                     sequence.append(image)
-                            pad_array = [np.zeros((self.MAX_WIDTH, self.MAX_HEIGHT))]
-                            sequence.extend(pad_array * (max_seq_length - len(sequence)))
+#                            pad_array = [np.zeros((self.MAX_WIDTH, self.MAX_HEIGHT))]
+#                            sequence.extend(pad_array * (max_seq_length - len(sequence)))
                             # sequence = np.array(sequence)
                             sequence = np.stack(sequence, axis=0)
                             # print(sequence.shape)
