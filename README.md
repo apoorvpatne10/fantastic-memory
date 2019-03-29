@@ -6,6 +6,26 @@ Project is based on [LipNet](https://github.com/apoorvpatne10/fantastic-memory/b
 
 Dataset used : [MIRACL-VC1](https://www.kaggle.com/apoorvwatsky/miraclvc1).
 
+## Lip Extraction demo
+
+Make sure that the video's framerate is 25fps.
+
+```
+apoorv@apoorv:~/Work$ python prepare_data_from_video.py -h
+usage: prepare_data_from_video.py [-h] path
+
+Add path to video
+
+positional arguments:
+  path        Mention the path to the video
+
+optional arguments:
+  -h, --help  show this help message and exit
+  
+Example : python prepare_data_from_video.py /home/Desktop/abc.mp4 
+
+```
+
 ## Model Summary (Temporary)
 
 ```
