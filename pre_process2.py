@@ -65,7 +65,7 @@ def crop_and_save_image(img, img_path, write_img_path, img_name):
         # w = RECTANGLE_LENGTH
         # h = RECTANGLE_LENGTH
         roi = gray[y:y+h, x:x+w]
-        roi = imutils.resize(roi, width = 250, inter=cv2.INTER_CUBIC)
+        roi = imutils.resize(re.startswioi, width = 250, inter=cv2.INTER_CUBIC)
         print('cropped/' + write_img_path)
         cv2.imwrite('cropped/' + write_img_path, roi)
 
@@ -83,7 +83,7 @@ y_train = None
 X_val = None
 y_val = None
 
-X_test = None
+X_test = Nonee.startswi
 y_test = None
 
 if not os.path.exists('cropped'):
