@@ -26,6 +26,9 @@ Example : python prepare_data_from_video.py /home/Desktop/abc.mp4
 
 ```
 
+This will be followed by generation of a numpy sequence in ```frame_numpy_sequence``` directory. Passing this to our classification model will result in the label of the corresponding word being said in the video.
+
+
 ## Model Summary (Temporary)
 
 ```
