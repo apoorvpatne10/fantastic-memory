@@ -70,7 +70,7 @@ Epoch 1/8
 ...
 ...
 Epoch 8/8
-1300/1300 [==============================] - 5s 4ms/step - loss: 3.6097 - mean_squared_error: 0.1402 - acc: 0.0985 - val_loss: 3.7023 - val_mean_squared_error: 0.1204 - val_acc: 0.3140
+1300/1300 [==============================] - 5s 4ms/step - loss: 3.6097 - mean_squared_error: 0.1402 - acc: 0.3252 - val_loss: 3.7023 - val_mean_squared_error: 0.1204 - val_acc: 0.3140
 Out[30]: <keras.callbacks.History at 0x7f2ffb6ba390>\
 ```
 ____________________________________________________
