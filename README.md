@@ -35,7 +35,7 @@ This will be followed by generation of a numpy sequence in ```frame_numpy_sequen
 - [ ] Data augmentation
 - [x] Dropout
 - [x] For words
-- [ ] or phrases
+- [ ] For phrases
 - [ ] Batch Normalization
 
 ## Model Summary (Temporary)
