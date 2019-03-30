@@ -30,13 +30,13 @@ This will be followed by generation of a numpy sequence in ```frame_numpy_sequen
 
 ## TODOs
 
-- [] a task list item
-- [] list _syntax_ required
-- [] normal **formatting**
--[x]more relaxed about syntax than GFM
-- [x]so inconsistencies should be ok
-- [] incomplete
-- [x] completed
+- [ ] Use C3D model
+- [ ] Reduce overfitting
+- [ ] Data augmentation
+- [x] Dropout
+- [x] For words
+- [ ] or phrases
+- [ ] Batch Normalization
 
 ## Model Summary (Temporary)
 
