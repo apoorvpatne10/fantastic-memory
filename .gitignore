@@ -1,6 +1,6 @@
-
-# Created by https://www.gitignore.io/api/python
-# Edit at https://www.gitignore.io/?templates=python
+hmk.mpg
+hmk.mpg_lip_cropped.mp4
+hmk.mpg_lip_highlight.mp4
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
