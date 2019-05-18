@@ -6,7 +6,7 @@ Project is based on [LipNet](https://github.com/apoorvpatne10/fantastic-memory/b
 
 Dataset used : [GRID CORPUS](http://spandh.dcs.shef.ac.uk/gridcorpus/d).
 
-![demo](https://media.giphy.com/media/TfonMto4xRKn9W4Dlf/giphy.gif)
+![demo](https://media.giphy.com/media/LOnPAdnzlAWKvT9jOJ/giphy.gif)
 
 ## Install the dependencies
 
