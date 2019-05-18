@@ -4,15 +4,24 @@ Lip Reading using STCNNs and Bi-GRUs. Currently under development.
 
 Project is based on [LipNet](https://github.com/apoorvpatne10/fantastic-memory/blob/master/lipNet.pdf).
 
-Dataset used : [MIRACL-VC1](https://www.kaggle.com/apoorvwatsky/miraclvc1).
+Dataset used : [GRID CORPUS](http://spandh.dcs.shef.ac.uk/gridcorpus/d).
 
-## Lip Extraction demo
+## Demo
 
-Make sure that the video's framerate is 25fps.
+![demo](https://i.imgur.com/SSCQ7s7.gif)
+
+## Install the dependencies
+
+`pip install -r requirements.txt`
+
+## Lip Extraction and phrase prediction
+
+Make sure that the video's framerate is 25fps. 
 
 ```
-apoorv@apoorv:~/Work$ python prepare_data_from_video.py -h
-usage: prepare_data_from_video.py [-h] path
+(lipnet) apoorv@apoorv:~/Work/fantastic-memory$ python predict.py -h
+Using TensorFlow backend.
+usage: predict.py [-h] path
 
 Add path to video
 
@@ -22,70 +31,14 @@ positional arguments:
 optional arguments:
   -h, --help  show this help message and exit
   
-Example : python prepare_data_from_video.py /home/Desktop/abc.mp4 
-
+Example : python predict.py /home/Desktop/abc.mpg|xyz.mp4 
 ```
 
-This will be followed by generation of a numpy sequence in ```frame_numpy_sequence``` directory. Passing this to our classification model will result in the label of the corresponding word being said in the video.
+This will be followed by generation of all frames of the video passed inside `demo_data/` along with its numpy sequence in ```frame_numpy_sequence``` directory and the decoded text based on the speaker's lip movement.
 
-## TODOs
+After this, execute `final_output.py` for final output:
 
-- [ ] Use C3D model
-- [ ] Reduce overfitting
-- [ ] Data augmentation
-- [x] Dropout
-- [x] For words
-- [ ] For phrases
-- [ ] Batch Normalization
-
-## Model Summary (Temporary)
-
-```
-Layer (type)                 Output Shape              Param #   
-=================================================================
-conv3d_4 (Conv3D)            (None, 9, 43, 43, 8)      1736      
-_________________________________________________________________
-max_pooling3d_4 (MaxPooling3 (None, 3, 14, 14, 8)      0         
-_________________________________________________________________
-dropout_5 (Dropout)          (None, 3, 14, 14, 8)      0         
-_________________________________________________________________
-flatten_2 (Flatten)          (None, 4704)              0         
-_________________________________________________________________
-dense_4 (Dense)              (None, 64)                301120    
-_________________________________________________________________
-dropout_6 (Dropout)          (None, 64)                0         
-_________________________________________________________________
-dense_5 (Dense)              (None, 32)                2080      
-_________________________________________________________________
-dropout_7 (Dropout)          (None, 32)                0         
-_________________________________________________________________
-dense_6 (Dense)              (None, 10)                330       
-_________________________________________________________________
-activation_2 (Activation)    (None, 10)                0         
-=================================================================
-Total params: 305,266
-Trainable params: 305,266
-Non-trainable params: 0
-```
-_____________
-## Initial training results
-
-```
-model.fit(X_train, y_train, validation_data=(X, y), batch_size=batch_si,
-      epochs=num_epochs, shuffle=True)
-Train on 1300 samples, validate on 100 samples
-Epoch 1/8
-1300/1300 [==============================] - 8s 6ms/step - loss: 4.5109 - mean_squared_error: 0.1800 - acc: 0.2992 - val_loss: 4.5063 - val_mean_squared_error: 0.1800 - val_acc: 0.2300
-...
-...
-Epoch 8/8
-1300/1300 [==============================] - 5s 4ms/step - loss: 3.6097 - mean_squared_error: 0.1402 - acc: 0.3252 - val_loss: 3.7023 - val_mean_squared_error: 0.1204 - val_acc: 0.3140
-Out[30]: <keras.callbacks.History at 0x7f2ffb6ba390>\
-```
-____________________________________________________
-
-## Lipnet : Our currently used architecture
-
+## LipNet architecture
 ```
 Layer (type)                     Output Shape          Param #     Connected to                     
 ====================================================================================================
@@ -149,10 +102,9 @@ Total params: 4,572,156.0
 Trainable params: 4,571,772.0
 Non-trainable params: 384.0
 ____________________________________________________________________________________________________
-None
 ```
 
-## C3D Model we'll be considering
+## C3D Model we'll be using soon:
 
 ```
 model.summary()
