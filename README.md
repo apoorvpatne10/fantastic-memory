@@ -36,7 +36,7 @@ Example : python predict.py /home/Desktop/abc.mpg|xyz.mp4
 
 This will be followed by generation of all frames of the video passed inside `demo_data/` along with its numpy sequence in ```frame_numpy_sequence``` directory and the decoded text based on the speaker's lip movement.
 
-After this, execute `final_output.py` for final output:
+After this, execute `final_output.py` for final output.
 
 ## LipNet architecture
 ```
