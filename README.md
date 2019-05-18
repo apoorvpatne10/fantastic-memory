@@ -8,7 +8,7 @@ Dataset used : [GRID CORPUS](http://spandh.dcs.shef.ac.uk/gridcorpus/d).
 
 ## Demo
 
-![demo](https://i.imgur.com/SSCQ7s7.gif)
+<img src="https://i.imgur.com/SSCQ7s7.gif" align="left" height="50" width="50" >
 
 ## Install the dependencies
 
