@@ -16,7 +16,7 @@ Create a new virtual environment and install the dependencies:
 
 ## Lip Extraction and phrase prediction
 
-Make sure that the video's framerate is 25fps. 
+Make sure that the video's framerate is 25fps. Pass the video as an argument to `predict` module.
 
 ```
 (lipnet) apoorv@apoorv:~/Work/fantastic-memory$ python predict.py -h
@@ -30,7 +30,11 @@ positional arguments:
 
 optional arguments:
   -h, --help  show this help message and exit
-  
+
+```
+
+Something like:
+```
 Example : python predict.py /home/Desktop/abc.mpg|xyz.mp4 
 ```
 
