@@ -10,6 +10,8 @@ Dataset used : [GRID CORPUS](http://spandh.dcs.shef.ac.uk/gridcorpus/d).
 
 ## Install the dependencies
 
+Create a new virtual environment and install the dependencies:
+
 `pip install -r requirements.txt`
 
 ## Lip Extraction and phrase prediction
