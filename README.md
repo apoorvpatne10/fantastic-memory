@@ -2,7 +2,7 @@
 
 Lip Reading using STCNNs and Bi-GRUs. Currently under development.
 
-Project is based on [LipNet](https://github.com/apoorvpatne10/fantastic-memory/blob/master/lipNet.pdf).
+Project is based on [LipNet](https://arxiv.org/pdf/1611.01599.pdf).
 
 Dataset used : [GRID CORPUS](http://spandh.dcs.shef.ac.uk/gridcorpus/d).
 
