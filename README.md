@@ -57,11 +57,10 @@ After this, execute `final_output.py` for final output.
 ## LipNet architecture
 
 ![lipnet](https://i.imgur.com/R0FfyLY.png)
-*LipNet architecture. A sequence of T frames is used as input, and is processed by 3 layers
+*[LipNet architecture](https://arxiv.org/pdf/1611.01599.pdf). A sequence of T frames is used as input, and is processed by 3 layers
 of STCNN, each followed by a spatial max-pooling layer. The features extracted are processed by
 2 Bi-GRUs; each time-step of the GRU output is processed by a linear layer and a softmax. This
-end-to-end model is trained with CTC*
-
+end-to-end model is trained with CTC.*
 
 
 ```
