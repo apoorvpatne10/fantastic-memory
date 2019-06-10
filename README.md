@@ -46,6 +46,14 @@ This will be followed by generation of all frames of the video passed inside `de
 
 After this, execute `final_output.py` for final output.
 
+## Bibtex
+    @article{assael2016lipnet,
+	  title={LipNet: End-to-End Sentence-level Lipreading},
+	  author={Assael, Yannis M and Shillingford, Brendan and Whiteson, Shimon and de Freitas, Nando},
+	  journal={GPU Technology Conference},
+	  year={2017}
+	}
+
 ## LipNet architecture
 ```
 Layer (type)                     Output Shape          Param #     Connected to                     
