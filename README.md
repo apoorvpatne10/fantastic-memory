@@ -8,6 +8,10 @@ Dataset used : [GRID CORPUS](http://spandh.dcs.shef.ac.uk/gridcorpus/d).
 
 ![demo](https://i.imgur.com/BHG2yjp.gif)
 
+## Achievements
+
+* Out of 750+ applicants across India, this project made it to the final [round](http://csiawards.inapp.in/wp-content/uploads/2019/04/CSI-InApp-Awards-_2019-Final-Round-ShortList.pdf) (top 16) of CSI National Project Competition 2019. 
+
 ## Install the dependencies
 
 Create a new virtual environment and install the dependencies:
