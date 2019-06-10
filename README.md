@@ -54,7 +54,7 @@ After this, execute `final_output.py` for final output.
 	  year={2017}
 	}
 
-## LipNet architecture
+## LipNet Architecture
 
 ![lipnet](https://i.imgur.com/R0FfyLY.png)
 *[LipNet architecture](https://arxiv.org/pdf/1611.01599.pdf). A sequence of T frames is used as input, and is processed by 3 layers
@@ -63,6 +63,7 @@ of STCNN, each followed by a spatial max-pooling layer. The features extracted a
 end-to-end model is trained with CTC.*
 
 
+## LipNet Model
 ```
 Layer (type)                     Output Shape          Param #     Connected to                     
 ====================================================================================================
