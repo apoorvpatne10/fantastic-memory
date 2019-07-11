@@ -12,7 +12,7 @@ Dataset used : [GRID CORPUS](http://spandh.dcs.shef.ac.uk/gridcorpus/).
 
 * Out of 750+ applicants across India, this project made it to the final [round](http://csiawards.inapp.in/wp-content/uploads/2019/04/CSI-InApp-Awards-_2019-Final-Round-ShortList.pdf) (top 16) of CSI National Project Competition 2019. 
 
-* IIC (Institution's Innovation Council) Proof of Concept : Project shortlisted for Mentorship Session/Boot Camp at Regional Level (Pune) on 26th July 2019.
+* IIC (Institution's Innovation Council) [Proof of Concept](http://abesit.in/wp-content/uploads/2019/05/IIC-PoC-Idea-Submission-Notice-8.pdf) : Project shortlisted for Mentorship Session/Boot Camp at Regional Level (Pune) on 26th July 2019.
 
 ## Install the dependencies
 
