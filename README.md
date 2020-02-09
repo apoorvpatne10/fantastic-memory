@@ -1,5 +1,7 @@
 # fantastic-memory
 
+Check out my [kernel](https://www.kaggle.com/apoorvwatsky/a-minimalistic-model-to-get-started-with) for MIRACL-VC1 on kaggle. It'd be a good place to start. I've worked on a simple model with a few layers to get started with.
+
 Lip Reading using STCNNs and Bi-GRUs. Currently under development.
 
 Project is based on [LipNet](https://arxiv.org/pdf/1611.01599.pdf).
