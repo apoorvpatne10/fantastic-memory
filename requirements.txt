@@ -12,7 +12,7 @@ networkx==2.3
 nltk==3.4.5
 numpy==1.16.2
 olefile==0.46
-opencv-contrib-python==4.1.0.25
+opencv-contrib-python==4.2.0.32
 Pillow==6.2.0
 protobuf==3.7.1
 pyparsing==2.4.0
