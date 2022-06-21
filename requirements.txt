@@ -10,7 +10,7 @@ kiwisolver==1.0.1
 matplotlib==2.0.0
 networkx==2.3
 nltk==3.4.5
-numpy==1.16.2
+numpy==1.22.0
 olefile==0.46
 opencv-contrib-python==4.1.0.25
 Pillow==6.2.0
